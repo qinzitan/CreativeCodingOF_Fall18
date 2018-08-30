@@ -17,5 +17,5 @@ Learning Goals:
 * Master _Variable_
 * Understand how add-on works
 * Understand how to read documentation
-* Practice _Googling_ skill as a creative coder
+* Practice your _Googling_ skill as a creative coder
 * Personal Initiative
