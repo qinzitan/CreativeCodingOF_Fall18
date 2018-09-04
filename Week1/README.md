@@ -1,6 +1,6 @@
 ### Week 1
 #### Topics
-Intro to OF  
+Intro to oF  
 C++ Language Basics & oF Structure  
 Drawing  
 <br/>
