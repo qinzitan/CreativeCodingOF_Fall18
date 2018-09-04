@@ -10,6 +10,6 @@ Email: qinzi.tan@newschool.edu (Office hours by appointment/email)
 [Course Syllabus](https://docs.google.com/document/d/12LYaJmZLognOJgHvsvJxoSntCEjD9vKyDm_kD-V0ieQ/edit)
 
 
-##### Students' Homework Repo
+#### Students' Homework Repo
 [Ray Luo](https://github.com/recfreq/CCOF_Fall2018_LC_RAY)  
 [June Lee](https://github.com/leej443/CCOF_Fall2018_LEE_JUNE)
