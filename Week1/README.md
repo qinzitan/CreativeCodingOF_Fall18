@@ -8,7 +8,7 @@ C++ Language Basics & oF Structure
 #### Homework - Setup & Review Coding Basics
 1. Setup Xcode and openFrameworks properly if you haven't. Get familiar with the development environment, and check out at least 10 more examples by yourself.
 
-2. Review coding basics, bootcamp slides & sketches - variables, if statement, loops, function, array and class.  
+2. Review coding basics, bootcamp slides & sketches - variables, if statement, loops, function, array, class etc.
 
 
 Learning Goals:
