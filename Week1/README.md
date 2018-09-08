@@ -1,7 +1,8 @@
 ### Week 1
 #### Topics
 Intro to oF  
-C++ Language Basics & oF Structure    
+C++ Language Basics & oF Structure  
+[_Week 1 - Slides_](https://docs.google.com/presentation/d/1kIjL8ZqYBWknSWrxhBcoQvPoW268_MkNr2koQAbnPig/edit?usp=sharing) 
 <br/>
 
 #### Homework - Setup & Review Coding Basics
