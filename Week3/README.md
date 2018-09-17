@@ -23,22 +23,25 @@ Add a GUI system so you can easily change some of the parameters (eg. size, leve
 
 **Basic Example: changing the radius of a circle using GUI**  
 **_ofApp.h_**   
+```C++
 #include "ofxGui.h"   
 class ofApp : public ofBaseApp{  
   ofxPanel gui;  
   ofxFloatSlider radius;  
-}  
+}
+```
 
 **_ofApp.cpp_**    
+```C++
 void ofApp::setup(){  
   gui.setup();  
   gui.add(radius.setup("radius", 140, 10, 300));  
-}  
-  
+}
 void ofApp::draw(){  
   ofDrawCircle(500, 500, radius);  
   gui.draw();  
-}  
+}
+```
 
 **ofxGUI Example & Youtube Tutorial:**   
 of_v0.10.0_osx_release > examples > gui > guiExample  
