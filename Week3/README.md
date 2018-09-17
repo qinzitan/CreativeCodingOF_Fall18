@@ -5,6 +5,7 @@ Linear Movement
 Interpolation, PCT
 <br/>
 
+===========
 #### Homework - Generative Graphics
 Create a generative image (static/animated) using the concept of PCT together with some math formulas.  
 The result has to be visually polished.
@@ -15,6 +16,7 @@ Eg. change the color of a circle from black gradually to white by setting the pc
 
 [Some math formulas for motion](https://soulwire.co.uk/math-for-motion/)
 
+===========  
 _**Bonus (optional):**_   
 Study [_ofxGui_](https://openframeworks.cc/documentation/ofxGui/) by yourself ;)  
 Add a GUI system so you can easily change some of the parameters (eg. size, level of randomness, color) at runtime using an interface.  
