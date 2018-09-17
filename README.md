@@ -12,4 +12,7 @@ Email: qinzi.tan@newschool.edu (Office hours by appointment/email)
 
 #### Students' Homework Repo
 [Ray Luo](https://github.com/recfreq/CCOF_Fall2018_LC_RAY)  
-[June Lee](https://github.com/leej443/CCOF_Fall2018_LEE_JUNE)
+[June Lee](https://github.com/leej443/CCOF_Fall2018_LEE_JUNE)  
+[Patti Cai](https://github.com/cair037/CCOF_FALL2018_Cai_Patti)  
+[Zihao Chen](https://github.com/qinzitan/CreativeCodingOF_Fall18)  
+[Feibi Zheng](https://github.com/zhenf091/CCOF_Fall2018_Zheng_Feibi)  

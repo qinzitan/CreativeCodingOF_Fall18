@@ -1,8 +1,6 @@
-### Week 1
+### Week 2
 #### Topics
-Intro to oF  
-C++ Language Basics & oF Structure  
-Drawing  
+Drawing, simple algorithm, trigonometry  
 <br/>
 
 #### Homework - Painting Applicatoin with GUI
