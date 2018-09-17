@@ -22,6 +22,11 @@ Study [_ofxGui_](https://openframeworks.cc/documentation/ofxGui/) by yourself ;)
 Add a GUI system so you can easily change some of the parameters (eg. size, level of randomness, color) at runtime using an interface.  
 
 **Basic Example: changing the radius of a circle using GUI**  
+
+**Add ofxGui addon to your project:**  
+when creating a project using project generator  
+add ofxGui to Addons (the dropdown menu under _Project path_)
+
 **_ofApp.h_**   
 ```C++
 #include "ofxGui.h"   
