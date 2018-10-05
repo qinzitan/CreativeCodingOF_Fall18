@@ -14,7 +14,7 @@ class Attractor{
     
 public:
     void setup(ofPoint _pos, float _radius, float _angle, float _vel);
-    void update();
+    void update(float _updatedRadius);
     void draw();
     
     ofPoint pos;

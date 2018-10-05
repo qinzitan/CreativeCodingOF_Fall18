@@ -8,6 +8,9 @@ void ofApp::setup(){
     
     radius = 100;
     
+    rMin = 5;
+    rMax = 200;
+    
     for(int i = 0; i < SEGMENT; i++){
         
         // 360/SEGMENT - 90
@@ -29,8 +32,25 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+//    radius += 1;
+    
+    if(rPct > 1){
+        rPct = 1;
+        rPctVel *= -1;
+    }
+    
+    if(rPct < 0){
+        rPct = 0;
+        rPctVel *= -1;
+    }
+
+    rPct += rPctVel;
+    float rPctOut = powf(rPct, 3);
+    radius = (1-rPctOut) * rMin + rPctOut * rMax;
+    
     for(int i = 0 ; i<attractors.size();i++){
-        attractors[i].update();
+        attractors[i].update(radius);
     }
 }
 

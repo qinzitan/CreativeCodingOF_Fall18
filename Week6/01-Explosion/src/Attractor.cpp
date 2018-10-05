@@ -18,7 +18,9 @@ void Attractor::setup(ofPoint _pos, float _radius, float _angle, float _vel){
 }
 
 //--------------------------------------------------------------
-void Attractor::update(){
+void Attractor::update(float _updatedRadius){
+   
+    radius = _updatedRadius;
     angle += vel;
     
     float x = radius * cos(angle);

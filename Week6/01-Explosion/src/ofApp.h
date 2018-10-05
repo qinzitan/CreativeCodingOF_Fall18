@@ -15,4 +15,11 @@ class ofApp : public ofBaseApp{
     vector<Attractor> attractors;
     
     float radius;
+    
+    float rMin;
+    float rMax;
+    
+    float rPct = 0;
+    float rPctVel = 0.005;
+    
 };
