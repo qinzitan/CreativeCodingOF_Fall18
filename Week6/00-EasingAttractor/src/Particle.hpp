@@ -14,13 +14,17 @@ class Particle{
 
 public:
     void init();
-    void updateParticle();
+    void updateParticle(ofPoint _attractor);
     void drawParticle();
     
     ofPoint pos;
     ofPoint vel;
     ofPoint pct;
     
+    float dist;
+    bool activated;
+    
+    float brightness;
 };
 
 #endif /* Particle_hpp */

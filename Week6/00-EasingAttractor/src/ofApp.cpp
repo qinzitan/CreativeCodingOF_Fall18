@@ -15,7 +15,14 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    
+    ofPoint attractor;
+    attractor.set(mouseX, mouseY);
+    
+    for(int i = 0; i<particles.size();i++){
+        particles[i].updateParticle(attractor);
+    }
+    
 }
 
 //--------------------------------------------------------------
