@@ -29,9 +29,9 @@ void Particle::addGravityForce(float _g){
 }
 
 //--------------------------------------------------------------
-void Particle::addDragForce(float _c){
+void Particle::addDragForce(Liquid _l){
     float speed = vel.length();
-    float dragMagnitude = _c * speed * speed;
+    float dragMagnitude = _l.c * speed * speed;
     
     ofPoint dragDirection = vel;
     dragDirection *= -1;
@@ -42,6 +42,19 @@ void Particle::addDragForce(float _c){
     applyForce(dragForce);
 }
 
+//--------------------------------------------------------------
+bool Particle::insideWater(Liquid _l){
+    if(loc.x > _l.x
+       && loc.x < _l.x + _l.w
+       && loc.y > _l.y
+       && loc.y < _l.y + _l.h
+       )
+    {
+    return true;
+    } else {
+        return false;
+    }
+}
 
 //--------------------------------------------------------------
 void Particle::update(){

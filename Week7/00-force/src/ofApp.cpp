@@ -25,7 +25,10 @@ void ofApp::update(){
     for(int i = 0; i<TOTALNUM; i++){
         particles[i].applyForce(wind);
         particles[i].addGravityForce(0.08);
-       
+        
+        
+        
+        particles[i].addDragForce(liquid);
         
         particles[i].update();
     }
@@ -36,4 +39,6 @@ void ofApp::draw(){
     for(int i = 0; i<TOTALNUM; i++){
         particles[i].draw();
     }
+    
+    liquid.draw();
 }

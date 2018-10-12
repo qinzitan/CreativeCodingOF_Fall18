@@ -9,6 +9,7 @@
 #define Particle_hpp
 
 #include "ofMain.h"
+#include "Liquid.hpp"
 
 class Particle {
     
@@ -20,9 +21,11 @@ public:
     void applyForce(ofPoint _f);
     void addGravityForce(float _g);
     
-    void addDragForce(float _c);
+    void addDragForce(Liquid _l);
     
     void checkEdges();
+    
+    bool insideWater(Liquid _l);
     
     ofPoint loc;
     ofPoint vel;
