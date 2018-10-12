@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Particle.hpp"
+#include "Liquid.hpp"
 
 #define TOTALNUM 10
 
@@ -13,4 +14,5 @@ class ofApp : public ofBaseApp{
 		void draw();
 		
     vector<Particle> particles;
+    Liquid liquid;
 };
