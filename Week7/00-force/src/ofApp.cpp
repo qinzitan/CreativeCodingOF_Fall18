@@ -26,9 +26,9 @@ void ofApp::update(){
         particles[i].applyForce(wind);
         particles[i].addGravityForce(0.08);
         
-        
-        
-        particles[i].addDragForce(liquid);
+        if(particles[i].insideWater(liquid)){
+            particles[i].addDragForce(liquid);
+        }
         
         particles[i].update();
     }

@@ -10,7 +10,7 @@
 //--------------------------------------------------------------
 void Particle::setup(){
     mass = ofRandom(0.5, 1.5);
-    loc.set(ofRandomWidth(), ofRandomHeight());
+    loc.set(ofRandomWidth(), ofRandomHeight()/2);
     vel.set(0, 0);
     acc.set(0, 0);
 }
