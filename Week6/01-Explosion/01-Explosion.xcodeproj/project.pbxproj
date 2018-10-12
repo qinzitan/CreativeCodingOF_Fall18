@@ -11,6 +11,7 @@
 		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
 		5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C88333E71C9457E441C33474 /* ofxButton.cpp */; };
 		676BA47721681078008746AE /* Attractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 676BA47521681078008746AE /* Attractor.cpp */; };
+		67D6A9262171347F00EEAD6E /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67D6A9242171347F00EEAD6E /* Particle.cpp */; };
 		837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15F2C6477A769C03A56D1401 /* ofxSlider.cpp */; };
 		852E0891794923EE7583C621 /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 44B351490B620D04E1E7C52D /* ofxInputField.cpp */; };
 		853E0BA2F448076739446874 /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 181D363B6DD54D1FA6309C43 /* ofxColorPicker.cpp */; };
@@ -64,6 +65,8 @@
 		52AFA1F08C420992CAAAE648 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSlider.h; path = ../../../addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
 		676BA47521681078008746AE /* Attractor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Attractor.cpp; sourceTree = "<group>"; };
 		676BA47621681078008746AE /* Attractor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Attractor.hpp; sourceTree = "<group>"; };
+		67D6A9242171347F00EEAD6E /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		67D6A9252171347F00EEAD6E /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
 		78D67A00EB899FAC09430597 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxLabel.cpp; path = ../../../addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
 		802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxSliderGroup.cpp; path = ../../../addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
 		87F26B4B24CBD428AD9EEBAA /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxBaseGui.h; path = ../../../addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
@@ -178,6 +181,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				676BA47521681078008746AE /* Attractor.cpp */,
 				676BA47621681078008746AE /* Attractor.hpp */,
+				67D6A9242171347F00EEAD6E /* Particle.cpp */,
+				67D6A9252171347F00EEAD6E /* Particle.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -299,6 +304,7 @@
 				853E0BA2F448076739446874 /* ofxColorPicker.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
+				67D6A9262171347F00EEAD6E /* Particle.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,
 				B266578FC55D23BFEBC042E7 /* ofxGuiGroup.cpp in Sources */,
 				852E0891794923EE7583C621 /* ofxInputField.cpp in Sources */,

@@ -27,6 +27,20 @@ void ofApp::setup(){
                 0.01);
         attractors.push_back(a);
     }
+    //attractors[0], attractors[1], attractors[2]
+    
+    
+    for(int i = 0; i< TOTALNUM; i++){
+        
+        int randomInt;
+        randomInt = (int)ofRandom(0, SEGMENT); //0, 1, 2
+        //randomInt = 1
+        
+        Particle p;
+        p.setup();
+        p.groupId = randomInt;
+        particles.push_back(p);
+    }
     
 }
 
@@ -52,11 +66,23 @@ void ofApp::update(){
     for(int i = 0 ; i<attractors.size();i++){
         attractors[i].update(radius);
     }
+    
+    for(int i=0; i<particles.size(); i++)
+    {
+        int index = particles[i].groupId;
+        particles[i].update(attractors[index].pos);
+    }
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    for(int i = 0 ; i<attractors.size();i++){
-        attractors[i].draw();
+//    for(int i = 0 ; i<attractors.size();i++){
+//        attractors[i].draw();
+//    }
+    
+    for(int i=0; i<particles.size(); i++)
+    {
+        particles[i].draw();
     }
 }

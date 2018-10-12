@@ -2,8 +2,10 @@
 
 #include "ofMain.h"
 #include "Attractor.hpp"
+#include "Particle.hpp"
 
-#define SEGMENT 12
+#define SEGMENT 3
+#define TOTALNUM 600
 
 class ofApp : public ofBaseApp{
 
@@ -13,6 +15,7 @@ class ofApp : public ofBaseApp{
 		void draw();
 
     vector<Attractor> attractors;
+    vector<Particle> particles;
     
     float radius;
     
