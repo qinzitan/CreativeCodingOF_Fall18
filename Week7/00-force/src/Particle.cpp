@@ -21,7 +21,32 @@ void Particle::applyForce(ofPoint _f){
 }
 
 //--------------------------------------------------------------
+void Particle::addGravityForce(float _g){
+    ofPoint gravity;
+    gravity.set(0, _g * mass);
+    
+    applyForce(gravity);
+}
+
+//--------------------------------------------------------------
+void Particle::addDragForce(float _c){
+    float speed = vel.length();
+    float dragMagnitude = _c * speed * speed;
+    
+    ofPoint dragDirection = vel;
+    dragDirection *= -1;
+    dragDirection.normalize();
+    
+    ofPoint dragForce = dragMagnitude * dragDirection;
+
+    applyForce(dragForce);
+}
+
+
+//--------------------------------------------------------------
 void Particle::update(){
+    checkEdges();
+    
     vel += acc;
     loc += vel;
     

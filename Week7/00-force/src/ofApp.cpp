@@ -21,6 +21,10 @@ void ofApp::update(){
     
     for(int i = 0; i<TOTALNUM; i++){
         particles[i].applyForce(wind);
+        
+        particles[i].addGravityForce(0.08);
+        //particles[i].addDragForce(0.09);
+        
         particles[i].update();
     }
 }

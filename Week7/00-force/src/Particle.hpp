@@ -18,6 +18,9 @@ public:
     void draw();
     
     void applyForce(ofPoint _f);
+    void addGravityForce(float _g);
+    
+    void addDragForce(float _c);
     
     void checkEdges();
     

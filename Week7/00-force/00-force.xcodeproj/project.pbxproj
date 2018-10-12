@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67296E6221714D8200A12667 /* Liquid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67296E6021714D8200A12667 /* Liquid.cpp */; };
 		67D6A92B21713CF400EEAD6E /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67D6A92921713CF400EEAD6E /* Particle.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -43,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		67296E6021714D8200A12667 /* Liquid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Liquid.cpp; sourceTree = "<group>"; };
+		67296E6121714D8200A12667 /* Liquid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Liquid.hpp; sourceTree = "<group>"; };
 		67D6A92921713CF400EEAD6E /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		67D6A92A21713CF400EEAD6E /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -110,6 +113,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				67D6A92921713CF400EEAD6E /* Particle.cpp */,
 				67D6A92A21713CF400EEAD6E /* Particle.hpp */,
+				67296E6021714D8200A12667 /* Liquid.cpp */,
+				67296E6121714D8200A12667 /* Liquid.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -227,6 +232,7 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				67D6A92B21713CF400EEAD6E /* Particle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				67296E6221714D8200A12667 /* Liquid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
