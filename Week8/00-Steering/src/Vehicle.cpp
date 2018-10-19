@@ -73,3 +73,29 @@ void Vehicle::steeringForce(ofPoint target){
     applyForce(steer);
 }
 
+//--------------------------------------------------------------
+void Vehicle::steeringWithArriveForce(ofPoint target){
+    
+    ofPoint desired = target - loc;
+    
+    //distance between current location and target
+    float dist = desired.length();
+     desired.normalize();
+    
+    //parking zone radius: 100
+    if(dist < 100){
+        float m = ofMap(dist, 0, 100, 0, maxSpeed);
+        desired *= m;
+    } else {
+        desired *= maxSpeed;
+    }
+    
+    ofPoint steer;
+    steer = desired - vel;
+    steer.limit(maxForce);
+    
+    
+    applyForce(steer);
+}
+
+

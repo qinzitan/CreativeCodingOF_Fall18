@@ -20,6 +20,8 @@ public:
     void applyForce(ofPoint f);
     void steeringForce(ofPoint target);
     
+    void steeringWithArriveForce(ofPoint target);
+    
     ofPoint loc;
     ofPoint vel;
     ofPoint acc;
@@ -28,6 +30,8 @@ public:
     
     float maxSpeed;
     float maxForce;
+    
+    
 };
 
 
