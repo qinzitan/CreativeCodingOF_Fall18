@@ -18,14 +18,16 @@ public:
     void draw();
     
     void applyForce(ofPoint f);
-    void steeringForce();
+    void steeringForce(ofPoint target);
     
     ofPoint loc;
     ofPoint vel;
     ofPoint acc;
     
     float r;
-
+    
+    float maxSpeed;
+    float maxForce;
 };
 
 

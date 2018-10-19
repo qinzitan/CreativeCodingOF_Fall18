@@ -13,6 +13,9 @@ void Vehicle::setup(){
     acc.set(0, 0);
     
     r = 3;
+    
+    maxSpeed = 2;
+    maxForce = 0.1;
 }
 
 //--------------------------------------------------------------
@@ -32,9 +35,14 @@ void Vehicle::draw(){
     ofFill();
     
     ofPushMatrix();
+    
+    //translate the origin to current location
+    //of the vehicle
     ofTranslate(loc.x, loc.y);
+    //rotate the canvas around the z axis
     ofRotateZDeg(heading2D);
     
+    //draw vehicle
     ofDrawTriangle(0, -r*2, -r, r*2, r, r*2);
     
     ofPopMatrix();
@@ -48,14 +56,18 @@ void Vehicle::applyForce(ofPoint f){
 
 
 //--------------------------------------------------------------
-void Vehicle::steeringForce(){
+void Vehicle::steeringForce(ofPoint target){
     //calculate steering force
     ofPoint steer;
     
+    ofPoint desired = target - loc;
+    desired.normalize(); //get the direction
+    //the fastest speed of the vehicle
+    desired *= maxSpeed;
+
+    steer = desired - vel;
     
-    
-    
-    
+    steer.limit(maxForce);
     
     //apply the force
     applyForce(steer);
