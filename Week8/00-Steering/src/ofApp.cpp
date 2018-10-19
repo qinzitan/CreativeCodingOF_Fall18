@@ -10,6 +10,7 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    vehicle.steeringForce(ofPoint(mouseX, mouseY));
     vehicle.update();
 }
 
