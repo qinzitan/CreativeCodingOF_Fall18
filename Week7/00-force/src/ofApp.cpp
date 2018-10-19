@@ -13,7 +13,7 @@ void ofApp::setup(){
     }
     
     liquid.setup(0,
-                 ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2, 0.09);
+                 ofGetWindowHeight()/2, ofGetWindowWidth(), ofGetWindowHeight()/2 + 1, 0.09);
 }
 
 //--------------------------------------------------------------
