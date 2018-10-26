@@ -17,6 +17,9 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    vf.update();
+    
     for(int i = 0; i<objects.size(); i++){
         objects[i].follow(vf);
         objects[i].update();

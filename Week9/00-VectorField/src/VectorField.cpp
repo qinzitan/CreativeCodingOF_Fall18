@@ -23,17 +23,15 @@ void VectorField::setup(){
         field.push_back(column);
         
         //to the right
-//        for(int y = 0; y<rows; y++){
-//            field[x][y] = ofPoint(1,0);
-//        }
-        
-        //random
         for(int y = 0; y<rows; y++){
-            field[x][y] = ofPoint(ofRandom(-10,10),
-                                  ofRandom(-10,10));
+            field[x][y] = ofPoint(1,0);
         }
         
-        
+        //random
+//        for(int y = 0; y<rows; y++){
+//            field[x][y] = ofPoint(ofRandom(-10,10),
+//                                  ofRandom(-10,10));
+//        }
         
     }
     
@@ -41,18 +39,22 @@ void VectorField::setup(){
 
 //--------------------------------------------------------------
 void VectorField::update(){
-    
+    noise(ofGetElapsedTimef());
 }
 
 //--------------------------------------------------------------
 void VectorField::noise(float t){
     for(int x = 0; x < field.size(); x++){
         for(int y = 0; y< field[x].size(); y++){
-            //noise value: 0.0 - 1.0
+            
+            //gives you a random number between 0 - 1
             float noiseVal = ofNoise(x * 0.05, y * 0.05, t*0.1);
+            
+        
             float noiseOutcome = ofMap(noiseVal,
                                        0, 1,
                                        0, TWO_PI);
+            
             field[x][y] = ofPoint(sin(noiseOutcome), cos(noiseOutcome));
         }
     }
