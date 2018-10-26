@@ -4,6 +4,8 @@
 #include "Vehicle.hpp"
 #include "VectorField.hpp"
 
+#define TOTALNUM 50
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -12,5 +14,6 @@ class ofApp : public ofBaseApp{
 		void draw();
 
     VectorField vf;
-		
+    
+    vector<Vehicle> objects;
 };
