@@ -20,6 +20,8 @@ public:
     vector< vector<ofPoint> > field;
     
     ofPoint getForce(ofPoint _loc);
+    
+    void noise(float t);
    
     int cols, rows;
     int resolution;
