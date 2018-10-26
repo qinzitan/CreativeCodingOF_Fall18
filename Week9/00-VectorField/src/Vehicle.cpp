@@ -50,3 +50,18 @@ void Vehicle::draw(){
 void Vehicle::applyForce(ofPoint force){
     acc += force;
 }
+
+void Vehicle::follow(VectorField vf){
+
+    ofPoint desired = vf.getForce(loc);
+    
+    desired *= maxSpeed;
+    
+    ofPoint steer = desired - vel;
+    steer.limit(maxForce);
+    applyForce(steer);
+}
+
+
+
+

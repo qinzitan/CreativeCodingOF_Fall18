@@ -18,6 +18,8 @@ public:
     void draw();
     
     vector< vector<ofPoint> > field;
+    
+    ofPoint getForce(ofPoint _loc);
    
     int cols, rows;
     int resolution;

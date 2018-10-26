@@ -53,3 +53,21 @@ void VectorField::draw(){
     }
     
 }
+
+//receives a vector (presumably the location of a vehicle)
+//and returns a corresponding vector field position
+//for that location
+ofPoint VectorField::getForce(ofPoint _loc){
+    
+    _loc.x /= resolution;
+    _loc.y /= resolution;
+    
+    //make sure we don't look outside of the vector field
+    int x = ofClamp( (int)_loc.x, 0, cols-1);
+    int y = ofClamp( (int)_loc.y, 0, rows-1);
+    
+    //returns a corresponding vector field position for that location
+    return field[x][y];
+}
+
+

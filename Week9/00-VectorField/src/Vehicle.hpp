@@ -9,6 +9,7 @@
 #define Vehicle_hpp
 
 #include "ofMain.h"
+#include "VectorField.hpp"
 
 class Vehicle{
     
@@ -18,6 +19,12 @@ public:
     void draw();
     
     void applyForce(ofPoint force);
+    
+    //advanced steering function
+    //waiting for a force to
+    //be passed from the
+    //vector field
+    void follow(VectorField vf);
     
     ofPoint loc;
     ofPoint vel;
