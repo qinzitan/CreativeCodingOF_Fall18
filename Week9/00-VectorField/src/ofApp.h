@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Vehicle.hpp"
+#include "VectorField.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -10,5 +11,6 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
+    VectorField vf;
 		
 };

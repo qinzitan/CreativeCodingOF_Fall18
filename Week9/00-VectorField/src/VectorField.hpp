@@ -17,6 +17,10 @@ public:
     void update();
     void draw();
     
+    vector< vector<ofPoint> > field;
+   
+    int cols, rows;
+    int resolution;
     
 };
 
