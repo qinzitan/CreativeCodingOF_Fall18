@@ -24,6 +24,7 @@ public:
     ofPoint acc;
     
     float r;
+    
     float maxForce;
     float maxSpeed;
     

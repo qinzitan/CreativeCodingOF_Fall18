@@ -26,7 +26,7 @@ void Vehicle::update(){
     acc *= 0;
 }
 
-//--------------------------------------------------------------
+//---------------------    ----------------------------------------
 void Vehicle::draw(){
     float angle = (float)atan2(vel.y, vel.x);
     float heading2D = ofRadToDeg(angle)+90;
