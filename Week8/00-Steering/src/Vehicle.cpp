@@ -82,6 +82,7 @@ void Vehicle::steeringWithArriveForce(ofPoint target){
     float dist = desired.length();
      desired.normalize();
     
+    
     //parking zone radius: 100
     if(dist < 100){
         float m = ofMap(dist, 0, 100, 0, maxSpeed);
